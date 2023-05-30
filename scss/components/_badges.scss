@@ -1,0 +1,76 @@
+/* Badges */
+.badge {
+  border-radius: $badge-radius;
+  font-size: $badge-Font-Size;
+  font-weight: initial;
+  line-height: 1;
+  padding: $badge-padding;
+  font-family: $TYPE-1;
+  font-weight: 500;
+  box-shadow: 2px 1px 8px rgba(47, 47, 47, 0.3) inset;
+  text-shadow:2px 1px 2px rgba(47, 47, 47, 0.28);
+  &.badge-pill {
+    border-radius: 10rem;
+  }
+
+  &.badge-fw {
+    min-width: 70px;
+  }
+}
+
+/*Badge variations*/
+// @each $color, $value in $theme-colors {
+//   .badge-#{$color} {
+//     @include badge-variations($value);
+//   }
+// }
+
+
+/*Badge variations*/
+.badge-primary {
+  border: none;
+  color: #ffffff;
+  @include gradient-x(gradient(skyblue),gradient(mediumpurple), 0%, 100%);
+}
+
+.badge-secondary {
+  border: none;
+  color: #ffffff;
+  @include gradient-x(gradient(danubeblue),gradient(marinerblue), 0%, 100%);
+}
+
+.badge-success, .preview-list .preview-item .preview-thumbnail .badge.badge-online {
+  border: none;
+  color: #ffffff;
+  @include gradient-x(gradient(mediumgreen),gradient(easternblue), 0%, 100%);
+}
+
+.badge-info, .preview-list .preview-item .preview-thumbnail .badge.badge-offline {
+  border: none;
+  color: #ffffff;
+  @include gradient-x(gradient(sprayblue),gradient(jordyblue), 0%, 100%);
+}
+
+.badge-warning, .preview-list .preview-item .preview-thumbnail .badge.badge-busy {
+  border: none;
+  color: #ffffff;
+  @include gradient-x(gradient(energyyellow),gradient(darkyellow), 0%, 100%);
+}
+
+.badge-danger {
+  border: none;
+  color: #ffffff;
+  @include gradient-x(gradient(orange),gradient(darkpink), 0%, 100%);
+}
+
+.badge-light {
+  border: none;
+  color: color(gray);
+  @include gradient-x(gradient(athensgray),gradient(iron), 0%, 100%);
+}
+
+.badge-dark {
+  border: none;
+  color: #ffffff;
+  @include gradient-x(gradient(pearlblue),gradient(hokiblue), 0%, 100%);
+}

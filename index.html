@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>RayTheme Admin</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="/node_modules/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="/node_modules/simple-line-icons/css/simple-line-icons.css">
+  <link rel="stylesheet" href="/node_modules/flag-icon-css/css/flag-icon.min.css">
+  <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <link rel="stylesheet" href="/node_modules/chartist/dist/chartist.min.css" />
+  <link rel="stylesheet" href="/node_modules/jvectormap/jquery-jvectormap.css" />
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="/scss/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="/images/favicon.png" />
+</head>
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html - you can  fixed-top class-->
+    <nav class="navbar col-lg-12 col-12 p-0  d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper">
+        <a class="navbar-brand brand-logo" href="/index.html"><img src="/images/logo.png" alt="logo"></a>
+        <a class="navbar-brand brand-logo-mini" href="/index.html"><img src="/images/logo_mini.png" alt="logo"></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center">
+          <button class="navbar-toggler navbar-toggler d-none d-lg-block align-self-center mr-2" type="button" data-toggle="minimize">
+            <i class="fas fa-list"></i>
+            </button>
+        <div class="page-name d-none d-lg-block">
+            <h1>Dashboard</h1>
+        <p>Lorem ipsum page description</p>
+        </div>
+      
+        <ul class="navbar-nav ml-lg-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="/#" data-toggle="dropdown">
+                  <i class="fas fa-search"></i>
+                </a>
+                <div class="dropdown-menu navbar-dropdown mail-notification dropdownAnimation"
+                  aria-labelledby="MailDropdown">
+                  <a class="dropdown-item">
+                    <form class="mt-2 mt-md-0 d-none d-lg-block search-input">
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search...">
+                        <i class="fas fa-search"></i>
+                      </div>
+                    </form>
+                  </a>
+                </div>
+              </li>
+          <li class="nav-item dropdown notification-dropdown">
+            <a class="nav-link count-indicator" id="MailDropdown" href="/#" data-toggle="dropdown">
+                <i class="fas fa-envelope-open-text"></i>
+                <span class="count bg-danger"></span>
+            </a>
+            <div class="dropdown-menu navbar-dropdown preview-list notification-drop-down dropdownAnimation" aria-labelledby="notificationDropdown">
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon">
+                    <i class="icon-info mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <p class="preview-subject font-weight-medium">Application Error</p>
+                  <p class="font-weight-light small-text">
+                    Just now
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon">
+                    <i class="icon-speech mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <p class="preview-subject">Settings</p>
+                  <p class="font-weight-light small-text">
+                    Private message
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon">
+                    <i class="icon-envelope mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <p class="preview-subject">New user registration</p>
+                  <p class="font-weight-light small-text">
+                    2 days ago
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown mail-dropdown">
+            <a class="nav-link count-indicator" id="notificationDropdown" href="/#" data-toggle="dropdown">
+              <i class="far fa-comment-alt"></i>
+              <span class="count"></span>
+            </a>
+        
+            <div class="dropdown-menu navbar-dropdown mail-notification dropdownAnimation" aria-labelledby="MailDropdown">
+              <a class="dropdown-item" href="/#">
+                <div class="sender-img">
+                  <img src="/images/faces/face6.jpg" alt="">
+                  <span class="badge badge-success">&nbsp;</span>
+                </div>
+                <div class="sender">
+                  <p class="Sende-name">John Doe</p>
+                  <p class="Sender-message">Hey, We have a meeting planned at the end of the day.</p>
+                </div>
+              </a>
+              <a class="dropdown-item" href="/#">
+                <div class="sender-img">
+                  <img src="/images/faces/face2.jpg" alt="">
+                  <span class="badge badge-success">&nbsp;</span>
+                </div>
+                <div class="sender">
+                  <p class="Sende-name">Leanne Jones</p>
+                  <p class="Sender-message">Can we schedule a call this afternoon?</p>
+                </div>
+              </a>
+              <a class="dropdown-item" href="/#">
+                <div class="sender-img">
+                  <img src="/images/faces/face3.jpg" alt="">
+                  <span class="badge badge-primary">&nbsp;</span>
+                </div>
+                <div class="sender">
+                  <p class="Sende-name">Stella</p>
+                  <p class="Sender-message">Great presentation the other day. Keep up the good work!</p>
+                </div>
+              </a>
+              <a class="dropdown-item" href="/#">
+                <div class="sender-img">
+                  <img src="/images/faces/face4.jpg" alt="">
+                  <span class="badge badge-warning">&nbsp;</span>
+                </div>
+                <div class="sender">
+                  <p class="Sende-name">James Brown</p>
+                  <p class="Sender-message">Need the updates of the project at the end of the week.</p>
+                </div>
+              </a>
+              <a href="/#" class="dropdown-item view-all">View all</a>
+            </div>
+          </li>
+          <!-- <li class="nav-item lang-dropdown d-none d-sm-block">
+            <a class="nav-link" href="/#">
+              <p class="mb-0">English <i class="flag-icon flag-icon-gb"></i></p>
+            </a>
+          </li> -->
+          <li class="nav-item dropdown d-none d-sm-block profile-img">
+            <a class="nav-link"  id="ProfileDropdown" href="/#" data-toggle="dropdown">
+              <div class="profile-image">
+                <img src="/images/faces/face4.jpg" alt="profile-img">
+                <span class="online-status online bg-success"></span>
+              </div>
+              <span>
+                <span class="profile-name">Diana Hume</span>
+                <i class="fas fa-angle-down"></i>
+              </span>
+            </a>
+            <div class="dropdown-menu navbar-dropdown mail-notification dropdownAnimation" aria-labelledby="ProfileDropdown">
+              <a class="dropdown-item" href="#">
+                <i class="fas fa-user icon"></i> Profile </a>
+            <a class="dropdown-item" href="#">
+                <i class="fas fa-bell icon"></i> Notifications </a>
+            <a class="dropdown-item" href="#">
+                <i class="fas fa-cog icon"></i> Settings </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="login.html">
+              <i class="fas fa-power-off icon"></i> Logout </a>
+            </div>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center ml-auto" type="button" data-toggle="offcanvas">
+          <i class="fas fa-list"></i>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <div class="row row-offcanvas row-offcanvas-right">
+        <!-- partial:partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+            <li class="nav-item nav-category">
+              <span class="nav-link">GENERAL</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">
+                 <i class="fas fa-tachometer-alt"></i>
+                  <span class="menu-title">Dashboard</span>
+              
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/widgets.html">
+                <i class="fas fa-th"></i>
+                <span class="menu-title">Widgets</span>
+                
+              </a>
+            </li>
+            <li class="nav-item nav-category">
+              <span class="nav-link">UI FEATURES</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                <i class="fas fa-layer-group"></i>
+                <span class="menu-title">Basic UI Elements</span>
+                
+              </a>
+              <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="/pages/ui-features/buttons.html">Buttons</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/pages/ui-features/typography.html">Typography</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/tables/basic-table.html">
+                <i class="fas fa-table"></i>
+                <span class="menu-title">Tables</span>
+                
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/icons/font-awesome.html">
+                <i class="fas fa-images"></i>
+                <span class="menu-title">Icons</span>
+                
+              </a>
+            </li>
+            <li class="nav-item nav-category">
+              <span class="nav-link">FORMS</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/forms/basic_elements.html">
+                <i class="fas fa-window-restore"></i>
+                <span class="menu-title">Form elements</span>
+                
+              </a>
+            </li>
+            <li class="nav-item nav-category">
+              <span class="nav-link">DATA REPRESENTAION</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/charts/flot-chart.html">
+                <i class="fas fa-chart-pie"></i>
+                <span class="menu-title">Charts</span>
+                
+              </a>
+            </li>
+            <li class="nav-item nav-category">
+              <span class="nav-link">SAMPLE PAGES</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+                <i class="fas fa-suitcase"></i>
+                <span class="menu-title">General Pages</span>
+                
+              </a>
+              <div class="collapse" id="auth">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="/pages/samples/login.html"> Login </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/pages/samples/register.html"> Register </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/pages/samples/error-404.html"> 404 </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/pages/samples/error-500.html"> 500 </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="/pages/samples/blank-page.html"> Blank Page </a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <!-- partial -->
+        <div class="content-wrapper">
+            <div class="row">
+                <div class="col-lg-12 grid-margin">
+                  <div class="card performance-cards">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col d-flex flex-row justify-content-center align-items-center row-margin">
+                          <div class="wrapper icon-circle bg-gradient-green">
+                            <i class="icon-rocket icons"></i>
+                          </div>
+                          <div class="wrapper text-wrapper">
+                            <p class="text-dark">8954</p>
+                            <p>Lifetime total sales</p>
+                          </div>
+                        </div>
+                        <div class="col d-flex flex-row justify-content-center align-items-center row-margin">
+                          <div class="wrapper icon-circle bg-gradient-red">
+                            <i class="icon-briefcase icons"></i>
+                          </div>
+                          <div class="wrapper text-wrapper">
+                            <p class="text-dark">7841</p>
+                            <p>Income amounts</p>
+                          </div>
+                        </div>
+                        <div class="col d-flex flex-row justify-content-center align-items-center row-margin">
+                          <div class="wrapper icon-circle bg-gradient-cornblue">
+                            <i class="icon-umbrella icons"></i>
+                          </div>
+                          <div class="wrapper text-wrapper">
+                            <p class="text-dark">6521</p>
+                            <p>Total users</p>
+                          </div>
+                        </div>
+                        <div class="col d-flex flex-row justify-content-center align-items-center row-margin">
+                          <div class="wrapper icon-circle bg-gradient-blue">
+                            <i class="icon-check icons"></i>
+                          </div>
+                          <div class="wrapper text-wrapper">
+                            <p class="text-dark">325</p>
+                            <p>Total visits</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ROW ENDS -->
+          <div class="row">
+            <div class="col-lg-12 grid-margin">
+              <div class="card overflow-hidden dashboard-curved-chart">
+                <div class="card-body">
+                  <h2 class="card-title">Recent Movement</h2>
+                  <div class="align-items-center mb-5 justify-content-between d-lg-flex d-xl-flex d-md-block d-block">
+                    <div id="chartLegend"></div>
+                    <div class="nav-wrapper d-inline-block mt-4 mt-lg-0">
+                      <ul class="nav nav-pills">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Week</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#">Month</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Year</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Today</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div id="curved-line-chart" class="float-chart float-chart-mini"></div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <!-- ROW ENDS -->
+        
+          <div class="row">
+						<div class="col-md-6 grid-margin">
+							<div class="card">
+								<div class="card-body">
+									<h4 class="card-title">Statistics</h4>
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="d-inline-block">
+											<div class="d-flex">
+												<h2 class="mb-0">$10,200</h2>
+												<div class="d-flex align-items-center ml-2">
+													<i class="mdi mdi-clock text-muted"></i>
+													<small class=" ml-1 mb-0">Updated: 9:10am</small>
+												</div>
+											</div>
+											<small class="text-gray">Raised from 89 orders.</small>
+										</div>
+										<div class="d-inline-block">
+											<div class="bg-success px-4 py-2 rounded bg-gradient-mediumgreen">
+												<i class="mdi mdi-buffer text-white icon-lg"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 grid-margin">
+							<div class="card">
+								<div class="card-body">
+									<h4 class="card-title">Daily Order</h4>
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="d-inline-block">
+											<div class="d-flex">
+												<h2 class="mb-0">$2256</h2>
+												<div class="d-flex align-items-center ml-2">
+													<i class="mdi mdi-clock text-muted"></i>
+													<small class=" ml-1 mb-0">Updated: 05:42pm</small>
+												</div>
+											</div>
+											<small class="text-gray">hey, let’s have lunch together</small>
+										</div>
+										<div class="d-inline-block">
+											<div class="px-4 py-2 rounded bg-gradient-lightyellow">
+												<i class="mdi mdi-wallet text-white icon-lg"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+          <div class="row section social-section">
+            <div class="col-lg-4 grid-margin stretch-card">
+              <div class="social-card w-100 bg-facebook shadow-facebook">
+                <div class="social-icon bg-gradient-danubeblue">
+                  <i class="icon-social-facebook icons"></i>
+                </div>
+                <div class="content">
+                  <p>+ 1500</p>
+                  <p>Facebook Likes</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 grid-margin stretch-card">
+              <div class="social-card w-100 bg-twitter shadow-twitter">
+                <div class="social-icon bg-gradient-mayablue">
+                  <i class="icon-social-twitter icons"></i>
+                </div>
+                <div class="content">
+                  <p>+574</p>
+                  <p>Twitter Followers</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 grid-margin stretch-card">
+              <div class="social-card w-100 bg-dribbble shadow-dribbble">
+                <div class="social-icon bg-gradient-brilliantred">
+                  <i class="icon-social-dribbble icons"></i>
+                </div>
+                <div class="content">
+                  <p>+450</p>
+                  <p>Dribble Shots</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ROW ENDS -->
+          <div class="row">
+            <div class="col-lg-12 grid-margin">
+              <div class="card">
+                <div class="card-body">
+                  <h2 class="card-title">Manage Users</h2>
+                  <div class="table-responsive">
+                    <table class="table table-striped table-borderless">
+                      <thead>
+                        <tr>
+                          <th>Name</th>
+                          <th>Position</th>
+                          <th>Office</th>
+                          <th>Age</th>
+                          <th>Start Date</th>
+                          <th>Assign</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Airi Satou</td>
+                          <td>Accountant</td>
+                          <td>Tokyo</td>
+                          <td>55</td>
+                          <td>2009/10/09</td>
+                          <td>$162,700</td>
+                        </tr>
+                        <tr>
+                          <td>Angelica Ramos</td>
+                          <td>Chief Executive Officer (CEO)</td>
+                          <td>London</td>
+                          <td>30</td>
+                          <td>2009/10/09</td>
+                          <td>$190,500</td>
+                        </tr>
+                        <tr>
+                          <td>Ashton Cox</td>
+                          <td>Regional Director</td>
+                          <td>San Francisco</td>
+                          <td>36</td>
+                          <td>2004/12/02</td>
+                          <td>$62,700</td>
+                        </tr>
+                        <tr>
+                          <td>Angelica Ramos</td>
+                          <td>Chief Executive Officer (CEO)</td>
+                          <td>London</td>
+                          <td>30</td>
+                          <td>2011/07/25</td>
+                          <td>$190,500</td>
+                        </tr>
+                        <tr>
+                          <td>Ashton Cox</td>
+                          <td>Regional Director</td>
+                          <td>San Francisco</td>
+                          <td>32</td>
+                          <td>2004/12/02</td>
+                          <td>$62,700</td>
+                        </tr>
+                        <tr>
+                          <td>Angelica Ramos</td>
+                          <td>Chief Executive Officer (CEO)</td>
+                          <td>London</td>
+                          <td>31</td>
+                          <td>2011/07/25</td>
+                          <td>$190,500</td>
+                        </tr>
+                        <tr>
+                          <td>Ashton Cox</td>
+                          <td>Regional Director</td>
+                          <td>Tokyo</td>
+                          <td>39</td>
+                          <td>2004/12/02</td>
+                          <td>$62,700</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between flex-wrap">
+                    <p class="mb-0 table-page-info">Showing 1 to 10 of 57 entries</p>
+                    <nav>
+                      <ul class="pagination rounded-separated pagination-info mt-3">
+                        <li class="page-item"><a class="page-link" href="/#"><i class="fas fa-angle-left"></i></a></li>
+                        <li class="page-item active"><a class="page-link" href="/#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="/#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="/#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="/#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="/#"><i class="fas fa-angle-right"></i></a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ROW ENDS -->
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="container-fluid clearfix">
+            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2018 <a href="/#" target="_blank">RayTheme</a>. All rights reserved.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart text-danger"></i></span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- row-offcanvas ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+  <!-- <script src="/node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script> -->
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <script src="/node_modules/flot/jquery.flot.js"></script>
+  <script src="/node_modules/flot/jquery.flot.resize.js"></script>
+  <script src="/node_modules/flot.curvedlines/curvedLines.js"></script>
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="/js/off-canvas.js"></script>
+  <script src="/js/hoverable-collapse.js"></script>
+  <script src="/js/misc.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="/js/dashboard.js"></script>
+  <!-- <script src="/js/settings.js"></script> -->
+  <!-- End custom js for this page-->
+</body>
+
+</html>

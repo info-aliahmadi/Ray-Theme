@@ -1,0 +1,158 @@
+/* Miscellanoeous */
+
+body {
+  background: $sidebar-light-bg;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  padding-right: 0 !important; // resets padding right added by Bootstrap modal
+}
+
+*:-moz-full-screen,
+*:-webkit-full-screen,
+*:fullscreen *:-ms-fullscreen {
+  overflow: auto !important;
+}
+
+.content-wrapper {
+  background: $content-bg;
+  margin-left: $sidebar-width-lg;
+  margin-right: 20px;
+  min-height: 100vh;
+  padding:35px;
+  transition: width $action-transition-duration $action-transition-timing-function, margin $action-transition-duration $action-transition-timing-function;
+  width: calc(100% - #{$sidebar-width-lg});
+  border-radius:$border-radius;
+  @media (max-width: 991px) {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  &.full-page-wrapper {
+    background: none;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.container-scroller {
+  overflow: hidden;
+}
+
+pre {
+  background: color(gray-lighter);
+  padding: 15px;
+  font-size: 14px;
+}
+.row-margin{
+  padding-top:20px;
+  padding-bottom:20px;
+}
+.mtop{
+  margin-top: 30px;
+}
+.shadow-facebook{
+  box-shadow: 0px 10px 30px  rgba(59, 87, 157, 0.25);
+}
+.shadow-twitter{
+  box-shadow: 0px 10px 30px rgba(29, 161, 242, 0.25);
+}
+.shadow-dribbble{
+  box-shadow: 0px 10px 30px rgba(234, 76, 137, 0.25);
+}
+.bg-gradient-green{
+    @include gradient-x(gradient(palmasgreen),gradient(green), 0%, 100%);
+}
+.bg-gradient-red{
+  @include gradient-x(gradient(orange),gradient(darkpink), 0%, 100%);
+}
+.bg-gradient-cornblue{
+  @include gradient-x(gradient(corn),gradient(lightblue), 0%, 100%);
+}
+.bg-gradient-blue{
+  @include gradient-x(gradient(irisblue),gradient(freeblue), 0%, 100%);
+}
+.bg-gradient-mediumgreen{
+  @include gradient-x(gradient(mediumgreen),gradient(easternblue), 0%, 100%);
+}
+.bg-gradient-pearlblue{
+  @include gradient-x(gradient(pearlblue),gradient(hokiblue), 0%, 100%);
+}
+.bg-gradient-danubeblue{
+  @include gradient-x(gradient(danubeblue),gradient(marinerblue), 0%, 100%);
+}
+.bg-gradient-mayablue{
+  @include gradient-x(gradient(mayablue),gradient(dodgerblue), 0%, 100%);
+}
+.bg-gradient-brilliantred{
+  @include gradient-x(gradient(illusionred),gradient(brilliantred), 0%, 100%);
+}
+.bg-gradient-ticklepink{
+  @include gradient-x(gradient(ticklepink),gradient(illusionred), 0%, 100%);
+}
+.bg-gradient-mediumblue{
+  @include gradient-x(gradient(skyblue),gradient(mediumblue), 0%, 100%);
+}
+.bg-gradient-skyblue{
+  @include gradient-x(gradient(skyblue),gradient(mediumpurple), 0%, 100%);
+}
+.bg-gradient-athensgray{
+  @include gradient-x(gradient(athensgray),gradient(athensgray), 0%, 100%);
+}
+.bg-gradient-irongray{
+  @include gradient-x(gradient(solitude),gradient(irongray), 0%, 100%);
+}
+.bg-gradient-lightyellow{
+  @include gradient-x(gradient(lightyellow),gradient(energyyellow), 0%, 100%);
+}
+.bg-gradient-energyyellow{
+  @include gradient-x(gradient(energyyellow),gradient(darkyellow), 0%, 100%);
+}
+.bg-gradient-darkyellow{
+  @include gradient-x(gradient(energyyellow),gradient(neutralgreen), 0%, 100%);
+}
+
+.bg-gradient-salmon{
+  @include gradient-x(gradient(salmon),gradient(cinnabarred), 0%, 100%);
+}
+.bg-gradient-sprayblue{
+  @include gradient-x(gradient(sprayblue),gradient(jordyblue), 0%, 100%);
+}
+
+//---- bg-  -----//
+.bg-primary{
+  @include gradient-x(gradient(skyblue),gradient(mediumpurple), 0%, 100%);
+}
+.bg-secondary{
+  @include gradient-x(gradient(danubeblue),gradient(marinerblue), 0%, 100%);
+}
+.bg-light{
+  @include gradient-x(gradient(athensgray),gradient(iron), 0%, 100%);
+}
+.bg-dark{
+  @include gradient-x(gradient(pearlblue),gradient(hokiblue), 0%, 100%);
+}
+.bg-info{
+  @include gradient-x(gradient(sprayblue),gradient(jordyblue), 0%, 100%);
+}
+.bg-success{
+  @include gradient-x(gradient(palmasgreen),gradient(green), 0%, 100%);
+}
+.bg-danger{
+  @include gradient-x(gradient(orange),gradient(darkpink), 0%, 100%);
+}
+.bg-warning{
+  @include gradient-x(gradient(energyyellow),gradient(darkyellow), 0%, 100%);
+}
+.notfound-full-bg{
+  background-image: -webkit-gradient(linear, left bottom, right top, fromgradient(corn), to(gradient(lightblue)));
+  background-image: linear-gradient(45deg, gradient(corn) 0%, gradient(lightblue) 100%);
+  background-repeat: repeat-x;
+}
+.error-full-bg{
+  background-image: -webkit-gradient(linear, left bottom, right top, fromgradient(darkpink), to(gradient(orange)));
+  background-image: linear-gradient(45deg, gradient(darkpink) 0%, gradient(orange) 100%);
+  background-repeat: repeat-x;
+}

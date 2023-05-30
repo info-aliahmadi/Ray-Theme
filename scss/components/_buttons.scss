@@ -1,0 +1,495 @@
+/* Buttons */
+.btn {
+  font-size: $input-btn-font-size;
+  line-height: 1;
+  font-size: 0.8rem;
+  padding: $input-btn-padding-y $input-btn-padding-x;
+  font-family: $TYPE-1;
+  font-weight: 500;
+  border:none;
+  @include border-radius($btn-border-radius);
+  i {
+    margin-right: 0.3125rem;
+  }
+
+  .btn-label {
+    &:before {
+      font-size: 1rem;
+      line-height: 5px;
+      vertical-align: middle;
+    }
+
+    &.btn-label-left {
+      margin-right: 5px;
+    }
+
+    &.btn-label-right {
+      margin-left: 5px;
+    }
+  }
+
+  &.btn-rounded {
+    @include border-radius(4px);
+  }
+
+  &.btn-fw {
+    min-width: $button-fixed-width;
+  }
+  &.btn-w-5 {
+    min-width: 150px;
+  }
+  &.icon-btn {
+    i {
+      margin-right: 0;
+    }
+  }
+
+  &.social-btn {
+    padding: $social-btn-padding;
+
+    i {
+      margin-right: 0;
+      font-size: $social-btn-icon-size;
+    }
+  }
+
+  &.btn-sm {
+    font-size: $input-btn-font-size-sm;
+  }
+
+  &.btn-lg {
+    font-size: $input-btn-font-size-lg;
+  }
+
+  &.btn-xs {
+    padding: $input-btn-padding-y-xs $input-btn-padding-x-xs;
+    font-size: $input-btn-font-size-xs;
+  }
+
+  &.btn-danger,
+  &.btn-info,
+  &.btn-primary,
+  &.btn-secondary,
+  &.btn-warning {
+    color: $white;
+  }
+  &.btn-primary{
+    @include gradient-y(gradient(skyblue),gradient(mediumpurple), 0%, 100%);
+    @include box-shadow(0,6px,12px, rgba(106, 209, 228, 0.36));
+   
+    &:hover{
+      @include gradient-y(gradient(skyblue),gradient(mediumpurple), 0%, 100%);
+      box-shadow: 0 0 10px rgba(106, 209, 228, 0.36), 1px 2px 12px rgba(47, 47, 47, 0.3) inset;
+    }
+    &:not([disabled]):not(.disabled):active{
+      @include gradient-x(gradient(skyblue),gradient(mediumpurple), 0%, 100%);
+      box-shadow: 0 0 10px rgba(106, 209, 228, 0.36), 0 0 12px rgba(47, 47, 47, 0.3) inset;
+    }
+  }
+  &.btn-secondary{
+    @include gradient-y(gradient(danubeblue),gradient(marinerblue), 0%, 100%);
+    @include box-shadow(0,4px,12px, rgba(111, 155, 255, 0.3));
+   
+    &:hover{
+      @include gradient-y(gradient(danubeblue),gradient(marinerblue), 0%, 100%);
+      box-shadow: 0 0 10px rgba(111, 155, 255, 0.3), 1px 2px 12px rgba(47, 47, 47, 0.3) inset;
+    }
+    &:not([disabled]):not(.disabled):active{
+      color:$white;
+      @include gradient-x(gradient(danubeblue),gradient(marinerblue), 0%, 100%);
+      box-shadow: 0 0 10px rgba(111, 155, 255, 0.3), 0 0 12px rgba(47, 47, 47, 0.3) inset;
+    }
+  }
+  &.btn-success {
+    color:$white;
+    @include gradient-y(gradient(mediumgreen),gradient(easternblue), 0%, 100%);
+    @include box-shadow(0,4px,12px, rgba(90, 234, 108, 0.3));
+   
+    &:hover{
+      @include gradient-y(gradient(mediumgreen),gradient(easternblue), 0%, 100%);
+      box-shadow: 0 0 10px rgba(90, 234, 108, 0.3), 1px 2px 12px rgba(47, 47, 47, 0.3) inset;
+    }
+    &:not([disabled]):not(.disabled):active{
+      color:$white;
+      @include gradient-x(gradient(mediumgreen),gradient(easternblue), 0%, 100%);
+      box-shadow: 0 0 10px rgba(90, 234, 108, 0.3), 0 0 12px rgba(47, 47, 47, 0.3) inset;
+    }
+  }
+  &.btn-danger {
+    @include gradient-y(gradient(salmon),gradient(cinnabarred), 0%, 100%);
+    @include box-shadow(0,4px,12px, rgba(255, 123, 123, 0.3));
+   
+    &:hover{
+      @include gradient-y(gradient(salmon),gradient(cinnabarred), 0%, 100%);
+      box-shadow: 0 0 10px rgba(255, 108, 123, 0.3), 1px 2px 12px rgba(47, 47, 47, 0.3) inset;
+    }
+    &:not([disabled]):not(.disabled):active{
+      @include gradient-x(gradient(salmon),gradient(cinnabarred), 0%, 100%);
+      box-shadow: 0 0 10px rgba(255, 108, 123, 0.3), 0 0 12px rgba(47, 47, 47, 0.3) inset;
+    }
+  }
+  &.btn-warning {
+    @include gradient-y(gradient(energyyellow),gradient(darkyellow), 0%, 100%);
+    @include box-shadow(0,4px,12px, rgba(216, 212, 81, 0.3));
+   
+    &:hover{
+      @include gradient-y(gradient(energyyellow),gradient(darkyellow), 0%, 100%);
+      box-shadow: 0 0 10px rgba(216, 212, 81, 0.3), 1px 2px 12px rgba(47, 47, 47, 0.3) inset;
+    }
+    &:not([disabled]):not(.disabled):active{
+      color:$white;
+      @include gradient-x(gradient(energyyellow),gradient(darkyellow), 0%, 100%);
+      box-shadow: 0 0 10px rgba(216, 212, 81, 0.3), 0 0 12px rgba(47, 47, 47, 0.3) inset;
+    }
+  }
+  &.btn-info {
+    @include gradient-y(gradient(mayablue),gradient(dodgerblue), 0%, 100%);
+    @include box-shadow(0,4px,12px, rgba(144, 209, 255, 0.3));
+   
+    &:hover{
+      @include gradient-y(gradient(mayablue),gradient(dodgerblue), 0%, 100%);
+      box-shadow: 0 0 10px rgba(144, 209, 255, 0.3), 1px 2px 12px rgba(47, 47, 47, 0.3) inset;
+    }
+    &:not([disabled]):not(.disabled):active{
+      color:$white;
+      @include gradient-x(gradient(mayablue),gradient(dodgerblue), 0%, 100%);
+      box-shadow: 0 0 10px rgba(144, 209, 255, 0.3), 0 0 12px rgba(47, 47, 47, 0.3) inset;
+    }
+  }
+  &.btn-light {
+    color: $darkslategray;
+    @include gradient-y(gradient(athensgray),gradient(iron), 0%, 100%);
+    @include box-shadow(0,4px,12px, rgba(218, 218, 218, 0.3));
+   
+    &:hover{
+      @include gradient-y(gradient(athensgray),gradient(iron), 0%, 100%);
+      box-shadow: 0 0 10px rgba(218, 218, 218, 0.3), 1px 2px 12px rgba(47, 47, 47, 0.3) inset;
+    }
+    &:not([disabled]):not(.disabled):active{
+      @include gradient-x(gradient(athensgray),gradient(iron), 0%, 100%);
+      box-shadow: 0 0 10px rgba(218, 218, 218, 0.3), 0 0 12px rgba(47, 47, 47, 0.3) inset;
+    }
+  }
+  &.btn-dark {
+    @include gradient-y(gradient(pearlblue),gradient(hokiblue), 0%, 100%);
+    @include box-shadow(0,4px,12px, rgba(175, 175, 175, 0.3));
+   
+    &:hover{
+      @include gradient-y(gradient(pearlblue),gradient(hokiblue), 0%, 100%);
+      box-shadow: 0 0 10px rgba(175, 175, 175, 0.3), 1px 2px 12px rgba(47, 47, 47, 0.3) inset;
+    }
+    &:not([disabled]):not(.disabled):active{
+      color:$white;
+      @include gradient-x(gradient(pearlblue),gradient(hokiblue), 0%, 100%);
+      box-shadow: 0 0 10px rgba(175, 175, 175, 0.3), 0 0 12px rgba(47, 47, 47, 0.3) inset;
+    }
+  }
+  &.btn-inverse-primary {
+    @include gradient-x(gradient(athensgray),gradient(iron), 0%, 150%);
+    @include box-shadow(0,4px,12px, rgba(175, 175, 175, 0.3));
+    border:2px solid darken(gradient(mediumpurple),10%);
+    color:darken(gradient(mediumpurple),13%);
+    text-shadow:1px 1px 0 rgba(255, 255, 255, 0.67);
+    &:hover{
+      border:2px solid lighten(gradient(mediumpurple),5%);
+      color:darken(gradient(mediumpurple),6%);
+      box-shadow: 0 0 10px rgba(175, 175, 175, 0.3);
+    }
+    &:not([disabled]):not(.disabled):active{
+      color:darken(gradient(mediumpurple),2%);
+      @include gradient-x(gradient(athensgray),gradient(iron), 0%, 150%);
+      box-shadow: 0 0 10px rgba(175, 175, 175, 0.3), 3px 2px 12px rgba(47, 47, 47, 0.3) inset;
+    }
+  }
+  &.btn-inverse-secondary {
+    @include gradient-x(gradient(athensgray),gradient(iron), 0%, 150%);
+    @include box-shadow(0,4px,12px, rgba(169, 183, 218, 0.29));
+    border:2px solid gradient(marinerblue);
+    color:lighten(gradient(marinerblue),7%);
+    text-shadow:1px 1px 0 rgba(255, 255, 255, 0.67);
+    &:hover{
+      border:2px solid lighten(gradient(marinerblue),10%);
+      color:lighten(gradient(marinerblue),7%);
+      box-shadow: 0 0 10px rgba(169, 183, 218, 0.29);
+    }
+    &:not([disabled]):not(.disabled):active{
+      color:lighten(gradient(marinerblue),7%);
+      @include gradient-x(gradient(athensgray),gradient(iron), 0%, 150%);
+      box-shadow: 0 0 10px rgba(169, 183, 218, 0.29), 3px 2px 12px rgba(47, 47, 47, 0.3) inset;
+    }
+  }
+  &.btn-inverse-success {
+    @include gradient-x(gradient(athensgray),gradient(iron), 0%, 150%);
+    @include box-shadow(0,4px,12px,  rgba(23, 162, 184, 0.18));
+    border:2px solid gradient(easternblue);
+    color:gradient(easternblue);
+    text-shadow:1px 1px 0 rgba(255, 255, 255, 0.67);
+    &:hover{
+      border:2px solid lighten(gradient(easternblue),10%);
+      color:lighten(gradient(easternblue),7%);
+      box-shadow: 0 0 10px  rgba(23, 162, 184, 0.18);
+    }
+    &:not([disabled]):not(.disabled):active{
+      color:lighten(gradient(easternblue),7%);
+      @include gradient-x(gradient(athensgray),gradient(iron), 0%, 150%);
+      box-shadow: 0 0 10px  rgba(23, 162, 184, 0.18), 3px 2px 12px rgba(47, 47, 47, 0.3) inset;
+    }
+  }
+  &.btn-inverse-danger {
+    @include gradient-x(gradient(athensgray),gradient(iron), 0%, 150%);
+    @include box-shadow(0,4px,12px,  rgba(243, 98, 98, 0.18));
+    border:2px solid gradient(darkpink);
+    color:gradient(darkpink);
+    text-shadow:1px 1px 0 rgba(255, 255, 255, 0.67);
+    &:hover{
+      border:2px solid darken(gradient(darkpink),10%);
+      color:darken(gradient(darkpink),7%);
+      box-shadow: 0 0 10px  rgba(243, 98, 98, 0.18);
+    }
+    &:not([disabled]):not(.disabled):active{
+      color:lighten(gradient(darkpink),7%);
+      @include gradient-x(gradient(athensgray),gradient(iron), 0%, 150%);
+      box-shadow: 0 0 10px  rgba(243, 98, 98, 0.18), 3px 2px 12px rgba(47, 47, 47, 0.3) inset;
+    }
+  }
+  &.btn-inverse-warning {
+    @include gradient-x(gradient(athensgray),gradient(iron), 0%, 150%);
+    @include box-shadow(0,4px,12px,  rgba(184, 184, 23, 0.18));
+    border:2px solid gradient(energyyellow);
+    color:gradient(textyellow);
+    text-shadow:1px 1px 0 rgba(255, 255, 255, 0.67);
+    &:hover{
+      border:2px solid darken(gradient(energyyellow),10%);
+      color:darken(gradient(textyellow),7%);
+      box-shadow: 0 0 10px  rgba(184, 184, 23, 0.18);
+    }
+    &:not([disabled]):not(.disabled):active{
+      color:darken(gradient(textyellow),7%);
+      @include gradient-x(gradient(athensgray),gradient(iron), 0%, 150%);
+      box-shadow: 0 0 10px  rgba(184, 184, 23, 0.18), 3px 2px 12px rgba(47, 47, 47, 0.3) inset;
+    }
+  }
+  &.btn-inverse-info {
+    @include gradient-x(gradient(athensgray),gradient(iron), 0%, 150%);
+    @include box-shadow(0,4px,12px,  rgba(23, 162, 184, 0.18));
+    border:2px solid gradient(dodgerblue);
+    color:darken(gradient(dodgerblue),7%);
+    text-shadow:1px 1px 0 rgba(255, 255, 255, 0.67);
+    &:hover{
+      border:2px solid darken(gradient(dodgerblue),10%);
+      color:darken(gradient(dodgerblue),7%);
+      box-shadow: 0 0 10px  rgba(23, 162, 184, 0.18);
+    }
+    &:not([disabled]):not(.disabled):active{
+      color:darken(gradient(dodgerblue),7%);
+      @include gradient-x(gradient(athensgray),gradient(iron), 0%, 150%);
+      box-shadow: 0 0 10px  rgba(23, 162, 184, 0.18), 3px 2px 12px rgba(47, 47, 47, 0.3) inset;
+    }
+  }
+  &.btn-inverse-light {
+    @include gradient-y(lighten(gradient(solitude),2%),lighten(gradient(irongray),2%), 0%, 150%);
+    @include box-shadow(0,4px,12px,  rgba(169, 169, 169, 0.12));
+    border:2px solid lighten(gradient(iron),5%);
+    color:darken($gray,7%);
+    text-shadow:1px 1px 0 rgba(255, 255, 255, 0.67);
+    &:hover{
+      border:2px solid gradient(iron);
+      color:darken($gray,7%);
+      box-shadow: 0 0 10px  rgba(169, 169, 169, 0.12);
+    }
+    &:not([disabled]):not(.disabled):active{
+      color:darken($gray,7%);
+      @include gradient-y(gradient(solitude),gradient(irongray), 0%, 150%);
+      box-shadow: 0 0 10px  rgba(169, 169, 169, 0.12), 3px 2px 12px rgba(47, 47, 47, 0.15) inset;
+    }
+  }
+  &.btn-inverse-dark {
+    @include gradient-x(gradient(athensgray),gradient(iron), 0%, 150%);
+    @include box-shadow(0,4px,12px,  rgba(169, 169, 169, 0.3));
+    border:2px solid color(gray);
+    color:color(gray);
+    text-shadow:1px 1px 0 rgba(255, 255, 255, 0.67);
+    &:hover{
+      border:2px solid darken(color(gray),7%);
+      color:darken(color(gray),7%);
+      box-shadow: 0 0 10px  rgba(169, 169, 169, 0.3);
+    }
+    &:not([disabled]):not(.disabled):active{
+      color:darken(color(gray),5%);
+      @include gradient-x(gradient(athensgray),gradient(iron), 0%, 150%);
+      box-shadow: 0 0 10px  rgba(169, 169, 169, 0.3), 3px 2px 12px rgba(47, 47, 47, 0.3) inset;
+    }
+  }
+
+  &.btn-outline-primary {
+    color:gradient(mediumpurple);
+    &:hover{
+      color:$white;
+      border:none;
+      @include gradient-y(gradient(skyblue),gradient(mediumpurple), 0%, 100%);
+    }
+    &:not([disabled]):not(.disabled):active{
+      color:$white;
+      @include gradient-y(gradient(skyblue),gradient(mediumpurple), 0%, 100%);
+      box-shadow: 0 0 10px rgba(175, 175, 175, 0.3), 3px 2px 12px rgba(47, 47, 47, 0.3) inset;
+    }
+  }
+  &.btn-outline-secondary {
+    color: gradient(marinerblue);
+    &:hover{
+      color:$white;
+      border:none;
+      @include gradient-y(gradient(danubeblue),gradient(marinerblue), 0%, 100%);
+    }
+    &:not([disabled]):not(.disabled):active{
+      color:$white;
+      @include gradient-y(gradient(danubeblue),gradient(marinerblue), 0%, 100%);
+      box-shadow: 0 0 10px rgba(175, 175, 175, 0.3), 3px 2px 12px rgba(47, 47, 47, 0.3) inset;
+    }
+  }
+  &.btn-outline-success {
+    color: gradient(easternblue);
+    &:hover{
+      color:$white;
+      border:none;
+      @include gradient-y(gradient(mediumgreen),gradient(easternblue), 0%, 100%);
+    }
+    &:not([disabled]):not(.disabled):active{
+      color:$white;
+      @include gradient-y(gradient(mediumgreen),gradient(easternblue), 0%, 100%);
+      box-shadow: 0 0 10px rgba(175, 175, 175, 0.3), 3px 2px 12px rgba(47, 47, 47, 0.3) inset;
+    }
+  }
+  &.btn-outline-danger {
+    color: gradient(cinnabarred);
+    &:hover{
+      color:$white;
+      border:none;
+      @include gradient-y(gradient(salmon),gradient(cinnabarred), 0%, 100%);
+    }
+    &:not([disabled]):not(.disabled):active{
+      color:$white;
+      @include gradient-y(gradient(salmon),gradient(cinnabarred), 0%, 100%);
+      box-shadow: 0 0 10px rgba(175, 175, 175, 0.3), 3px 2px 12px rgba(47, 47, 47, 0.3) inset;
+    }
+  }
+  &.btn-outline-warning {
+    color: gradient(textyellow);
+    &:hover{
+      color:$white;
+      border:none;
+      @include gradient-y(gradient(energyyellow),gradient(darkyellow), 0%, 100%);
+    }
+    &:not([disabled]):not(.disabled):active{
+      color:$white;
+      @include gradient-y(gradient(energyyellow),gradient(darkyellow), 0%, 100%);
+      box-shadow: 0 0 10px rgba(175, 175, 175, 0.3), 3px 2px 12px rgba(47, 47, 47, 0.3) inset;
+    }
+  }
+  &.btn-outline-info {
+    color: gradient(dodgerblue);
+    &:hover{
+      color:$white;
+      border:none;
+      @include gradient-y(gradient(mayablue),gradient(dodgerblue), 0%, 100%);
+    }
+    &:not([disabled]):not(.disabled):active{
+      color:$white;
+      @include gradient-y(gradient(mayablue),gradient(dodgerblue), 0%, 100%);
+      box-shadow: 0 0 10px rgba(175, 175, 175, 0.3), 3px 2px 12px rgba(47, 47, 47, 0.3) inset;
+    }
+  }
+  &.btn-outline-light {
+    color:darken( gradient(iron),10%);
+    &:hover{
+      color:$darkslategray;
+      border:none;
+      @include gradient-y(gradient(athensgray),gradient(iron), 0%, 100%);
+    }
+    &:not([disabled]):not(.disabled):active{
+      color:$darkslategray;
+      @include gradient-y(gradient(athensgray),gradient(iron), 0%, 100%);
+      box-shadow: 0 0 10px rgba(175, 175, 175, 0.3), 3px 2px 12px rgba(47, 47, 47, 0.3) inset;
+    }
+  }
+  &.btn-outline-dark {
+    color: gradient(hokiblue);
+    &:hover{
+      color:$white;
+      border:none;
+      @include gradient-y(gradient(pearlblue),gradient(hokiblue), 0%, 100%);
+    }
+    &:not([disabled]):not(.disabled):active{
+      color:$white;
+      @include gradient-y(gradient(pearlblue),gradient(hokiblue), 0%, 100%);
+      box-shadow: 0 0 10px rgba(175, 175, 175, 0.3), 3px 2px 12px rgba(47, 47, 47, 0.3) inset;
+    }
+  }
+}
+
+.btn-group {
+  border: $border-width solid $border-color;
+  @include border-radius($btn-border-radius);
+
+  .btn {
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    &.btn-primary {
+      border-color: darken(theme-color(primary),3%);
+    }
+
+    &.btn-secondary {
+      border-color: darken(theme-color(secondary),3%);
+    }
+
+    &.btn-info {
+      border-color: darken(theme-color(info),3%);
+    }
+
+    &.btn-warning {
+      border-color: darken(theme-color(warning),3%);
+    }
+
+    &.btn-success {
+      border-color: darken(theme-color(success),3%);
+    }
+
+    &.btn-danger {
+      border-color: darken(theme-color(danger),3%);
+    }
+
+    &.btn-dark {
+      border-color: darken(theme-color(dark),3%);
+    }
+
+    &.btn-light {
+      border-color: darken(theme-color(light),3%);
+    }
+  }
+}
+
+.btn-toolbar {
+  .btn-group {
+    +.btn-group {
+      @extend .ml-2;
+    }
+  }
+}
+/*social buttons*/
+@each $color, $value in $social-colors {
+  .btn-#{$color} {
+    @include social-button(social-color($color));
+  }
+}
+/* inverse buttons */
+@each $color, $value in $theme-colors {
+  .btn-inverse-#{$color} {
+    @include button-inverse-variant($value);
+  }
+}

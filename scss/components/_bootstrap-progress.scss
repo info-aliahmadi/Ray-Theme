@@ -1,0 +1,51 @@
+/* Bootstrap Progress */
+
+.progress {
+  @include border-radius($progress-radius);
+  @include gradient-x(gradient(athensgray),gradient(iron), 0%, 100%);
+  box-shadow: 3px 2px 6px rgba(47, 47, 47, 0.13) inset;
+  height: 13px;
+
+  .progress-bar {
+    @include border-radius($progress-radius);
+    box-shadow: 2px 1px 8px rgba(47, 47, 47, 0.3) inset;
+
+    &.bg-primary{
+      @include gradient-x(gradient(skyblue),gradient(mediumpurple), 0%, 100%);
+    }
+    &.bg-secondary{
+      @include gradient-x(gradient(danubeblue),gradient(marinerblue), 0%, 100%);
+    }
+    &.bg-light{
+      @include gradient-x(gradient(athensgray),gradient(iron), 0%, 100%);
+    }
+    &.bg-dark{
+      @include gradient-x(gradient(pearlblue),gradient(hokiblue), 0%, 100%);
+    }
+    &.bg-info{
+      @include gradient-x(gradient(sprayblue),gradient(jordyblue), 0%, 100%);
+    }
+    &.bg-success{
+      @include gradient-x(gradient(palmasgreen),gradient(green), 0%, 100%);
+    }
+    &.bg-danger{
+      @include gradient-x(gradient(orange),gradient(darkpink), 0%, 100%);
+    }
+    &.bg-warning{
+      @include gradient-x(gradient(energyyellow),gradient(darkyellow), 0%, 100%);
+    }
+  }
+
+  &.progress-sm{
+    height: 8px;
+  }
+  &.progress-md {
+    height: 13px;
+  }
+  &.progress-lg {
+    height: 18px;
+  }
+  &.progress-xl {
+    height: 22px;
+  }
+}

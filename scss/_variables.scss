@@ -1,0 +1,295 @@
+////////// COLOR SYSTEM //////////
+
+$blue: #2babf9;
+$blue-1: #00bbd3;
+$blue-2: #3e53b6;
+$indigo: #3e53b6;
+$purple: #8c51ed;
+$pink: #fc75b0;
+$red: #e43535;
+$orange: #fe5623;
+$yellow: #feee59;
+$green: #51b254;
+$teal: #58d8a3;
+$cyan: #2babf9;
+$cyan-light: #e5eef0;
+$cyan-lighter: #f3f7f8;
+$black: #000;
+$darkslategray: #2e383e;
+$white-smoke: #f3f5f7;
+$white: #ffffff;
+$violet: #8c51ed;
+$gray:#aeaeae;
+$dodger-blue: #7face1;
+$blue-teal-gradient: $white;
+$colors: (
+  blue: $blue,
+  indigo: $indigo,
+  purple: $purple,
+  pink: $pink,
+  red: $red,
+  orange: $orange,
+  yellow: $yellow,
+  green: $green,
+  teal: $teal,
+  cyan: $cyan,
+  white: $white,
+  gray: #434a54,
+  gray-light: #aab2bd,
+  gray-lighter: #e8eff4,
+  gray-lightest: #e6e9ed,
+  gray-dark: #0f1531
+);
+$social-colors: (
+  twitter: #1da1f2,
+  facebook: #3b579d,
+  google: #dc4a38,
+  linkedin: #0177b4,
+  pinterest: #cc2127,
+  youtube: #e52d27,
+  github: #333333,
+  behance: #1769ff,
+  dribbble: #ea4c89,
+  reddit: #ff4500
+);
+
+$gradients: (
+  pink: #fc75b0,
+  royalblue: #7051ed,
+
+  green: #51b254,
+  palmasgreen: #cede45,
+
+  orange: #fe5623,
+  darkpink: #ec4079,
+
+  corn: #feee59,
+  lightblue: #94eaf9,
+
+  irisblue: #00bbd3,
+  freeblue: #3e53b6,
+
+    
+  easternblue: #17a2b8,
+  mediumgreen: #58d8a3,
+
+  pearlblue: #9d9d9e,
+  hokiblue: #607d8b,
+      
+  danubeblue: #6d88ca,
+  marinerblue: #4962a1,
+
+  mayablue: #7ccbfd,
+  dodgerblue: #2babf9,
+
+  illusionred: #f193b7,
+  brilliantred: #f45a95,
+  ticklepink: #fb75b0,
+  mediumblue: #7051ed,
+
+  skyblue: #8de9fa,
+  mediumpurple: #8c51ed,
+
+  athensgray: #f3f5f7,
+  iron: #d9dadc,
+
+  solitude: #f6f6f8,
+  irongray: #dfe0e1,
+
+  lightyellow: #f5f269,
+  energyyellow: #f3d24d,
+  neutralgreen: #aead8a,
+  darkyellow: #c4c26b,
+  textyellow: #dcb92c,
+
+  salmon: #fd7c7c,
+  cinnabarred: #e43535,
+
+  sprayblue: #89d6f2,
+  jordyblue: #7face1
+);
+$theme-colors: (
+  primary: #6d88ca,
+  secondary: #cfd2d7,
+  success: #58d8a3,
+  info:#8de9fa,
+  warning: #f3d24d,
+  danger: #ec4079,
+  light: #f5f7fa,
+  dark: #32323d
+);
+////////// COLOR SYSTEM //////////
+
+$enable-gradients: true !default;
+
+////////// TEMPLATE VARIABLES //////////
+
+$content-bg: $cyan-lighter;
+$footer-bg: $content-bg;
+$footer-color: color(dark);
+$border-color: #f2f2f2;
+$border-radius: 30px;
+
+////////// TEMPLATE VARIABLES //////////
+
+$card-shadow: 0px 10px 30px rgba(89, 163, 175, 0.0705);
+$badge-radius:30px;
+$badge-padding:6px 12px;
+$badge-Font-Size:12px;
+
+$progress-radius:30px;
+$progress-border-color:rgba(255, 255, 255, 0.3);
+////////// FONT VARIABLES //////////
+
+$TYPE-1: 'Roboto', sans-serif;
+$TYPE-2: 'Questrial', sans-serif;
+$TYPE-3: 'Lobster', cursive;
+$default-font-size: 0.875rem;
+$text-muted: #8d9498;
+$body-color: #12131a;
+
+////////// FONT VARIABLES //////////
+
+
+
+////////// SIDEBAR VARIABLES ////////
+
+$sidebar-width-lg: 240px;
+$sidebar-width-mini: 100px;
+$sidebar-width-icon: 70px;
+$sidebar-dark-bg: theme-color(dark);
+$sidebar-light-bg: $white;
+$sidebar-dark-menu-color: #aeaeae;
+$sidebar-dark-menu-active-bg: initial;
+$sidebar-dark-menu-active-color: #c0bbbb;
+$sidebar-dark-menu-hover-bg: #39363f;
+$sidebar-dark-menu-hover-color: color(white);
+$sidebar-dark-submenu-color: $sidebar-dark-menu-color;
+$sidebar-dark-submenu-hover-bg: initial;
+$sidebar-dark-submenu-hover-color: #9a94a7;
+$sidebar-category-font-size: 0.6875rem;
+$sidebar-category-color: $cyan;
+$sidebar-category-padding: 30px 10px 10px 20px;
+$sidebar-menu-font-size: 0.8rem;
+$sidebar-menu-padding: 0.6rem 1.4rem;
+$nav-link-height: 52px;
+$sidebar-submenu-padding: 0 0 0 4.25rem;
+$sidebar-submenu-font-size: 0.75rem;
+$sidebar-submenu-item-padding: 0.75rem 1.4rem 0.75rem 4.6rem;
+$sidebar-icon-font-size: 0.9375rem;
+$sidebar-arrow-font-size: 0.625rem;
+$sidebar-profile-bg: transparent;
+$sidebar-profile-padding: 0 1.625rem;
+
+////////// SIDEBAR VARIABLES ////////
+
+$sidebar-mini-menu-padding:0.6rem 1.4rem;
+$sidebar-icononly-hover-open-head-bg:$white;
+$sidebar-icononly-hover-open-head-bg-right:#f3f7f8;
+$sidebar-icon-only-submenu-width:200px;
+$sidebar-icononly-hover-open-shadow: rgba(113, 106, 202, 0.08);
+$sidebar-icon-only-submenu-padding: 0.6rem 1.4rem;;
+
+$navbar-height: 99px;
+$navbar-light-color: #202339;
+$navbar-font-size: 0.9375rem;
+$navbar-icon-font-size: 1.25rem;
+$sidebar-icononly-hover-open-bg:$white;
+$sidebar-icononly-open-color:$gray;
+$horizontal-menu-padding:  0 1rem;
+$horizontal-menu-icon-font-size:0.9375rem;
+$horizontal-menu-font-size:0.875rem;
+$horizontal-menu-submenu-color: #202339;
+$horizontal-menu-submenu-item-padding:0.85rem 0;
+$horizontal-menu-item-padding: 0.75rem 0;
+
+$rtl-sidebar-submenu-padding:0 2.05rem 0 0;
+
+$boxed-container-width:96%;
+
+///////// NAVBAR VARIABLES ////////
+
+
+
+
+
+
+///////// NAVBAR VARIABLES ////////
+
+
+
+///////// BUTTONS VARIABLES ////////
+
+$button-fixed-width: 100px;
+$input-btn-padding-y: 0.65rem;
+$input-btn-padding-x: 0.875rem;
+$input-btn-line-height: 1;
+$input-btn-padding-y-xs: 0.5rem;
+$input-btn-padding-x-xs: 0.75rem;
+$input-btn-padding-y-sm: 5px;
+$input-btn-padding-x-sm: 5px;
+$input-btn-padding-y-lg: 15px;
+$input-btn-padding-x-lg: 20px;
+$input-btn-font-size: 0.875rem;
+$input-btn-font-size-xs: 0.625rem;
+$input-btn-font-size-sm: 0.875rem;
+$input-btn-font-size-lg: 0.875rem;
+$btn-border-radius: 50px;
+$btn-border-radius-xs: 50px;
+$btn-border-radius-sm: 50px;
+$btn-border-radius-lg: 50px;
+$social-btn-padding: 10px;
+$social-btn-icon-size: 1rem;
+
+///////// BUTTONS VARIABLES ////////
+
+
+
+/////////  FORMS VARIABLES /////////
+
+$input-bg: color(white);
+$input-border-radius: 30px;
+$input-placeholder-color: #c9c8c8;
+$input-font-size: 0.75rem;
+$input-border-color:#e5e5e5;
+$input-padding:12px 12px 14px 12px;
+$input-group-text-padding:6px 20px 6px 20px;
+$checkboxes-border-color:#e5e5e5;
+/////////  FORMS VARIABLES /////////
+
+
+
+//////// TABLES VARIABLES ////////
+
+$table-accent-bg: $content-bg;
+$table-hover-bg: $content-bg;
+$table-cell-padding: 15px;
+$table-border-color: $border-color;
+$table-border-radius: 20px;
+
+$table-striped-color-1: #f3f7f8;
+$table-striped-color-2: #edeef0;
+
+$table-inverse-bg: theme-color(dark);
+$table-inverse-color: color(white);
+
+
+//////// TABLES VARIABLES ////////
+
+$pagination-radius: 20px;
+
+
+////////// MEASUREMENT AND PROPERTY VARIABLES //////////
+
+$border-property: 1px solid $border-color;
+$card-spacing-y: 1.5rem;
+$card-padding-y: 20px;
+$card-padding-x: 30px;
+$grid-gutter-width: 30px;
+$action-transition-duration: 0.25s;
+$action-transition-timing-function: ease;
+
+////////// MEASUREMENT AND PROPERTY VARIABLES //////////
+
+$auth-bg-from:#78ebfc;
+$auth-bg-to:#8b5aed;
