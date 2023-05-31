@@ -1,4 +1,5 @@
-<a href="http://www.bootstrapdash.com/demo/Ray Theme-admin-free/jquery/" target="_blank"><img src="screenshot.jpg"></a>
+<a href="http://www.bootstrapdash.com/demo/Ray Theme-admin-free/jquery/" target="_blank">
+<img src="https://raw.githubusercontent.com/info-aliahmadi/Ray-Theme/main/images/Demo/RayTheme-Admin.png"></a>
 
 <h1>Ray Theme</h1>
 Ray Theme admin dashboard is completely based on the latest version of Bootstrap 4. Ray Theme Admin is designed to reflect the simplicity and svelte of the components and UI elements and coded to perfection with well-organized code. This makes it easy to change its looks to anything that you desire on your admin panel. Ray Theme Admin is a perfect pick to create any kind of simple or complex backend applications or any other web applications.
