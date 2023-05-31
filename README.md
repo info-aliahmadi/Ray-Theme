@@ -64,11 +64,11 @@ Ray Theme is released under MIT license. Ray Theme is a free Bootstrap 4 admin d
 <h1>How to use Ray Theme ?</h1>
 
 
-1 - Click the Clone or Download button in GitHub and download as a ZIP file or you can enter the command git clone ''https://github.com/info-aliahmadi/Ray-Theme.githttps://github.com/info-aliahmadi/Ray-Theme.git'' in you terminal to get a copy of this dashboard.
+1 - Click the Clone or Download button in GitHub and download as a ZIP file or you can enter the command git clone `https://github.com/info-aliahmadi/Ray-Theme.githttps://github.com/info-aliahmadi/Ray-Theme.git` in you terminal to get a copy of this dashboard.
 
 2 - After the files have been downloaded you will get a folder with all the required files
 
-3 - You can install all the dependencies in the dashboard by running the command ''npm install''. All the required files are in the node-modules.
+3 - You can install all the dependencies in the dashboard by running the command `npm install`. All the required files are in the node-modules.
 
 4 - Find the file named index.html, check what all components you need. Open the file in a text editor and you can start editing.
 
@@ -78,7 +78,7 @@ Ray Theme is released under MIT license. Ray Theme is a free Bootstrap 4 admin d
 
 
 We love your contributions and we welcome them wholeheartedly. We believe the more the merrier.
-To contribute make sure you have a Node.js and npm installed. Now run the command gulp --version. If the command returns with the Gulp version number, it means you have Gulp installed. If not you need to run the command npm install --global gulp-cli to install Gulp.
+To contribute make sure you have a Node.js and npm installed. Now run the command `gulp --version`. If the command returns with the Gulp version number, it means you have Gulp installed. If not you need to run the command npm install --global gulp-cli to install Gulp.
 
 <h2>Next</h2>
 
