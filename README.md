@@ -1,8 +1,39 @@
-<a href="http://www.bootstrapdash.com/demo/Ray Theme-admin-free/jquery/" target="_blank">
-<img src="https://raw.githubusercontent.com/info-aliahmadi/Ray-Theme/main/images/Demo/RayTheme-Admin.png"></a>
+# preview 1
+## Dashboard
+<a href="https://raw.githubusercontent.com/info-aliahmadi/Ray-Theme/main/images/Demo/RayTheme-Admin.png" target="_blank">
+<img src="https://raw.githubusercontent.com/info-aliahmadi/Ray-Theme/main/images/Demo/RayTheme-Admin.png">
+</a>
+
+# preview 2
+## Widgets
+<a href="https://raw.githubusercontent.com/info-aliahmadi/Ray-Theme/main/images/Demo/RayTheme-Admin2png.png" target="_blank">
+<img src="https://raw.githubusercontent.com/info-aliahmadi/Ray-Theme/main/images/Demo/RayTheme-Admin2png.png">
+</a>
+
+# preview 3
+## Basic UI Elements
+<a href="https://raw.githubusercontent.com/info-aliahmadi/Ray-Theme/main/images/Demo/RayTheme-Admin3.png" target="_blank">
+<img src="https://raw.githubusercontent.com/info-aliahmadi/Ray-Theme/main/images/Demo/RayTheme-Admin3.png">
+</a>
+# preview 4
+## Tables
+<a href="https://raw.githubusercontent.com/info-aliahmadi/Ray-Theme/main/images/Demo/RayTheme-Admin4.png" target="_blank">
+<img src="https://raw.githubusercontent.com/info-aliahmadi/Ray-Theme/main/images/Demo/RayTheme-Admin4.png">
+</a>
+# preview 5
+## Form Elements
+<a href="https://raw.githubusercontent.com/info-aliahmadi/Ray-Theme/main/images/Demo/RayTheme-Admin6.png" target="_blank">
+<img src="https://raw.githubusercontent.com/info-aliahmadi/Ray-Theme/main/images/Demo/RayTheme-Admin6.png">
+</a>
+
+# preview 6
+## Login Page
+<a href="https://raw.githubusercontent.com/info-aliahmadi/Ray-Theme/main/images/Demo/RayTheme-Admin7.png" target="_blank">
+<img src="https://raw.githubusercontent.com/info-aliahmadi/Ray-Theme/main/images/Demo/RayTheme-Admin7.png">
+</a>
 
 <h1>Ray Theme</h1>
-Ray Theme admin dashboard is completely based on the latest version of Bootstrap 4. Ray Theme Admin is designed to reflect the simplicity and svelte of the components and UI elements and coded to perfection with well-organized code. This makes it easy to change its looks to anything that you desire on your admin panel. Ray Theme Admin is a perfect pick to create any kind of simple or complex backend applications or any other web applications.
+Ray Theme admin dashboard is completely based on the Bootstrap 4. Ray Theme Admin is designed to reflect the simplicity and svelte of the components and UI elements and coded to perfection with well-organized code. This makes it easy to change its looks to anything that you desire on your admin panel. Ray Theme Admin is a perfect pick to create any kind of simple or complex backend applications or any other web applications.
 <br><br>
 The dashboard is always kept up to date and kept up with the latest technologies. Ray Theme is a completely responsive admin dashboard that gives you an effortless viewing experience on mobile devices as well as small and large desktops.
 
@@ -33,11 +64,11 @@ Ray Theme is released under MIT license. Ray Theme is a free Bootstrap 4 admin d
 <h1>How to use Ray Theme ?</h1>
 
 
-1 - Click the Clone or Download button in GitHub and download as a ZIP file or you can enter the command git clone https://github.com/BootstrapDash/Ray Theme.git in you terminal to get a copy of this dashboard.
+1 - Click the Clone or Download button in GitHub and download as a ZIP file or you can enter the command git clone ''https://github.com/info-aliahmadi/Ray-Theme.githttps://github.com/info-aliahmadi/Ray-Theme.git'' in you terminal to get a copy of this dashboard.
 
 2 - After the files have been downloaded you will get a folder with all the required files
 
-3 - You can install all the dependencies in the dashboard by running the command npm install. All the required files are in the node modules.
+3 - You can install all the dependencies in the dashboard by running the command ''npm install''. All the required files are in the node-modules.
 
 4 - Find the file named index.html, check what all components you need. Open the file in a text editor and you can start editing.
 
@@ -63,7 +94,7 @@ After Gulp has been installed, follow the steps below to contribute.
   <br>
 	5 - Submit a pull request.
 
+## License
+This project is licensed under the MIT License. See the LICENSE file for more information.
 
-Do you need a dashboard with more features and functionalities? Get more with our collection of the premium dashboard with more plugins, eye catching animations, UI components, and sample pages all fitting together with a high-quality design.
-Visit
-  <a href="https://www.bootstrapdash.com" target="_blank">https://www.bootstrapdash.com</a> for more admin dashboards.
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
